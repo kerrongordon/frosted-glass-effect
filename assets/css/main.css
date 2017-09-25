@@ -48,7 +48,7 @@ table {
 }
 
 .body {
-    background: url(../img/bg.jpg) fixed no-repeat;
+    background: url(../img/bg.jpg) 50% 50% fixed no-repeat;
     background-size: cover;
     width: 100%;
     height: 100vh;
@@ -67,16 +67,16 @@ table {
 
 .frosted::before {
     content: '';
-    width: 110%;
-    height: 110%;
+    width: 120%;
+    height: 120%;
     background: inherit; 
     position: absolute;
-    left: -10px;
+    left: -35px;
     right: 0;
-    top: -10px; 
+    top: -35px; 
     bottom: 0;
-    box-shadow: inset 0 0 0 200px rgba(255,255,255,0.3);
-    filter: blur(20px);
+    box-shadow: inset 0 0 0 250px rgba(255,255,255,0.3);
+    filter: blur(25px);
 }
 
 .loginForm {
@@ -115,13 +115,16 @@ select:-webkit-autofill {
 
 .textInput {
     background: transparent;
-    box-shadow: 0 2px 0 #757788;
+    box-shadow: 0 2px 0 #dcdcdc;
     transition: all 0.3s ease;
 }
 
 .textInput:focus {
     box-shadow: 0 2px 0 #03A9F4;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.43);
+}
+
+.textInput::placeholder {
+    color: #dcdcdc;
 }
 
 .loginBtn {
